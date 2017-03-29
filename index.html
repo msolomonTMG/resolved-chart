@@ -10,11 +10,18 @@
   </head>
   <body>
     <div class="container">
-      <span class="align-middle" id="loading">
-        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-        <span class="sr-only">Loading...</span>
-      </span>
-      <div id="chart" height="100vh" width="100vh"></div>
+      <div class="row">
+        <div class="col-10">
+          <span class="align-middle" id="loading">
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+          </span>
+          <div id="chart" height="100vh" width="100%"></div>
+        </div>
+        <div class="col">
+          <p id="countdown" class="h3"></p>
+        </div>
+      </div>
     </div>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
@@ -25,5 +32,6 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://use.fontawesome.com/621aec2598.js"></script>
     <script src="js/chart.js"></script>
+    <script src="js/countdown.js"></script>
   </body>
 </html>
